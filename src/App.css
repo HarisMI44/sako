@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #fffbe0;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 50px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  height: 750px;
+  object-fit: cover;
+}
+
+.nama_hari,
+.input_catetan_hari {
+  display: flex;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+.input_catetan_hari {
+  flex-wrap: wrap;
+}
+
+.input_catetan_hari div {
+  width: 163px;
+  height: 86px;
+  border: 1px solid black;
+  border-radius: 27px;
+}
+
+.nama_hari div {
+  width: 200px;
+  height: 86px;
+  border-radius: 27px;
+  background-color: #bfb4f8;
+  color: black;
+  font-size: 40px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+}
+
+
+section.catatan {
+  display: flex;
+
+  margin-top: 40px;
+
+}
+
+section.catatan div {
+  /* border : 1px solid black; */
+
+}
+
+section.catatan .catatanContainer {
+  flex: 2;
+}
+
+section.catatan .quotes {
+  flex: 1;
+}
+
+
+.wrapContainerCatatan {
+  background-color: green;
+  width: 600px;
+  height: 500px;
+  border-radius: 10px;
+  border: 4px solid black;
+}
+
+.wrapContainerQuotes {
+  background-color: green;
+  width: 400px;
+  height: 500px;
+  border-radius: 10px;
+  border: 4px solid black;
+}
+
+
+section .containerTabungan {
+  display: flex;
+}
+
+section.tabungan {
+  margin-top: 100px;
+}
+
+section.tabungan h1 {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.inputTabunganContainer {
+  flex: 1;
+}
+
+.inputTabunganContainer input {
+  width: 80%;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.tampilanCatatanContainer {
+  /* display: flex; */
+  flex: 1;
+}
+
+.tampilanCatatan {
+  background-color: #bfb4f8;
+  width: 400px;
+  height: 380px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.tampilanTotal input {
+  border-radius: 5px;
+  width: 65%;
+  height: 40px;
+  background-color: pink;
+}
+
+.listTabunganContainer{
+  padding :10px 20px;
+  list-style: none;
+}
+
+.listTabunganContainer li{
+  margin : 20px 0;
+}
+
+.tampilanCatatan .list-tabungan{
+  display: flex;
+  gap : 30px;
+  border-bottom: 3px solid black;
+}
+
+.containerTabungan button{
+  margin-top : 10px;
+  border-radius : 10px;
+  padding : 10px 10px;
+  background-color: lightblue;
+}
+
+
+.infoSako {
+  margin: 100px 0;
+}
+
+.infoSako h1 {
+  text-align: center;
+}
+
+.infoSako .containerCard {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.infoSako .containerCard .card {
+  /* background-color: #85f8b7; */
+  height: 450px;
+  width: 378px;
+  border: 3px solid black;
+  border-radius: 35px;
+}
+
+.card .imageCard {
+  padding: 17px;
+  border: 3px solid black;
+  border-radius: 32px;
+}
+
+.card .imageCard img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.card .linkCardContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+
+}
+
+.linkCard {
+  background-color: orange;
+  display: block;
+  width: 80%;
+  border-radius: 16px;
+  text-align: center;
+  font-size: 32px;
+  color : black;
+  font-weight: bolder;
+}
