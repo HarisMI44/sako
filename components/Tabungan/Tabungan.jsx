@@ -86,7 +86,7 @@ const Tabungan = () => {
 
                   <input type="checkbox" name="" id="" />
                   <div>
-                    <label htmlFor="">{data.nominal}</label>
+                    <label htmlFor="">Rp. {data.nominal.toLocaleString('id-ID')}</label>
                     <div>{data.tanggal}</div>
                   </div>
                   <button type='button' onClick={() => hapusData(data.id)}>Hapus</button>
@@ -97,9 +97,9 @@ const Tabungan = () => {
             </ul>
           </div>
           <div className='tampilanTotal'>
-            <h2>Total</h2>
+            <h2>Total : </h2>
             {/* <input type="number" /> */}
-            <h2>{hitungTotal()}</h2>
+            <h2>Rp. {hitungTotal().toLocaleString('id-ID')}</h2>
           </div>
 
         </div>
