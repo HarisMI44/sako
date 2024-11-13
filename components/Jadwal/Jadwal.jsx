@@ -92,7 +92,8 @@ useEffect(() => {
 
   return (
     <>
-     <section id="jadwalHarian">
+     <section id="jadwalHarian" style={{marginTop : "40px"}}>
+        <h1 style={{ textAlign : "center"}}>Jadwal Harian</h1>
           <div className="nama_hari">
             <div>Senin</div>
             <div>Selasa</div>
