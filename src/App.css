@@ -19,6 +19,27 @@ body {
   object-fit: cover;
 }
 
+.header-hero{
+  position: relative;
+}
+
+/* .header-text-link{
+  position: absolute;
+  top: 116px;
+  right: 360px;
+}
+
+.header-text-link:nth-child(0){
+  position: absolute;
+  top: 116px;
+  right: 360px;
+}
+.header-text-link:nth-child(1){
+  position: absolute;
+  top: 300px;
+  right: 360px;
+} */
+
 .nama_hari,
 .input_catetan_hari {
   display: flex;

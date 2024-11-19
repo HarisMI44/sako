@@ -10,12 +10,16 @@ function App() {
 
   return (
     <>
-      <header>
+      <header className='header-hero'>
         <img className="header" src={headerImage} />
+        {/* <div className="header-text-link">
+          <div>Jadwal Harian</div>
+          <div>Tabungan</div>
+          <div>Info Sako</div>
+        </div> */}
       </header>
 
       <div className="container">
-       
         <Jadwal />
 
         {/* <section id='catatan' className='catatan'>
