@@ -92,7 +92,7 @@ useEffect(() => {
 
   return (
     <>
-     <section id="jadwalHarian" style={{marginTop : "40px"}}>
+    <section id="jadwalHarian" style={{marginTop : "40px"}}>
         <h1 style={{ textAlign : "center"}}>Jadwal Harian</h1>
           <div className="nama_hari">
             <div>Senin</div>
@@ -107,8 +107,8 @@ useEffect(() => {
 
           <div className="input_catetan_hari">
             {jadwal.map((data, index) => (
-              <div className="p-4" key={index} onClick={() => addJadwal(data.id)}>
-                <h1 className="text-sm">{data.judul}</h1>
+              <div className="p-5" key={index} onClick={() => addJadwal(data.id)}>
+                <p className="text-sm">{data.judul}</p>
                 <p className="text-sm">{data.tanggal}</p>
                 {/* <p className="text-sm">ID : {data.id}</p> */}
               </div>
@@ -120,7 +120,6 @@ useEffect(() => {
           <div className="modal-box">
 
             <form method="dialog">
-              {/* if there is a button in form, it will close the modal */}
               <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
             </form>
             <div style={{width: "100%"}}>
