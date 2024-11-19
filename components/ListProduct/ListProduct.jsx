@@ -70,7 +70,7 @@ const ListProduct = () => {
           <div className='containerCard'>
             {products.map((item, key) => (
               
-              <div className="card">
+              <div className="card" key={key}>
                 <div className='imageCard'>
                   <img src={`../../asset/fotoGambar/${item.foto}`} alt="" />
                 </div>
