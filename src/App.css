@@ -156,7 +156,7 @@ section.tabungan h1 {
   margin-top : 20px;
   padding : 10px;
   border-radius: 5px;
-  width: 200px;
+  width: 400px;
 }
 
 .tampilanTotal input {
@@ -186,6 +186,14 @@ section.tabungan h1 {
   border-radius : 10px;
   padding : 10px 10px;
   background-color: lightblue;
+}
+
+.containerTabungan .listTabunganContainer button{
+  background: none;
+}
+
+.containerTabungan .listTabunganContainer button:hover{
+  background: red;
 }
 
 

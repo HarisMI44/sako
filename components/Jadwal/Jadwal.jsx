@@ -107,7 +107,7 @@ useEffect(() => {
 
           <div className="input_catetan_hari">
             {jadwal.map((data, index) => (
-              <div className="p-5" key={index} onClick={() => addJadwal(data.id)}>
+              <div className={`${data.judul ? "bg-black text-white" : null} p-5`} key={index} onClick={() => addJadwal(data.id)}>
                 <p className="text-sm">{data.judul}</p>
                 <p className="text-sm">{data.tanggal}</p>
                 {/* <p className="text-sm">ID : {data.id}</p> */}
