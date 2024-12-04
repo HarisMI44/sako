@@ -1,23 +1,14 @@
-// import { useState } from 'react'
-import headerImage from './assets/header.jpg'
-// import viteLogo from '/vite.svg'
 import './App.css'
 import Tabungan from '../components/Tabungan/Tabungan'
 import Jadwal from '../components/Jadwal/Jadwal';
 import ListProduct from '../components/ListProduct/ListProduct';
+import Hero from '../components/Hero/hero';
 
 function App() {
 
   return (
     <>
-      <header className='header-hero'>
-        <img className="header" src={headerImage} />
-        {/* <div className="header-text-link">
-          <div>Jadwal Harian</div>
-          <div>Tabungan</div>
-          <div>Info Sako</div>
-        </div> */}
-      </header>
+      <Hero />
 
       <div className="container">
         <Jadwal />

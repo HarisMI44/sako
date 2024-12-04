@@ -13,10 +13,11 @@ body {
   margin: 0 auto;
 }
 
-.header {
+header {
   width: 100%;
   height: 750px;
-  object-fit: cover;
+  background-color: #85f8b7;
+  /* object-fit: cover; */
 }
 
 .header-hero{
@@ -148,7 +149,7 @@ section.tabungan h1 {
 }
 
 .tampilanTotal{
-  background-color: orange;
+  background-color: #f9b2de;
   color : white;
   display: flex;
   gap : 20px;
@@ -178,7 +179,7 @@ section.tabungan h1 {
 .tampilanCatatan .list-tabungan{
   display: flex;
   gap : 30px;
-  border-bottom: 3px solid black;
+  /* border-bottom: 3px solid black; */
 }
 
 .containerTabungan button{

@@ -26,13 +26,11 @@ const Jadwal = () => {
     if (!localStorage.getItem("jadwal")) {
       // Kalau tidak ada data jadwal di localstorage
       // maka buat data jadwal
-      const initialJadwal = Array.from({ length: 21 }, () => ({
+      const initialJadwal = Array.from({ length: 35 }, () => ({
         "id": crypto.randomUUID(),
         "judul": "",
         "tanggal": ""
       }))
-
-      console.log(initialJadwal);
 
       localStorage.setItem("jadwal", JSON.stringify(initialJadwal));
     }
@@ -97,8 +95,8 @@ const Jadwal = () => {
         <img src={JadwalHeader} className='m-auto mb-10'/>
         {/* <div className="nama_hari"> */}
         <div className="grid grid-cols-7 gap-4 mb-4 mt-4">
-          {["Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu", "Minggu"].map( hari => (
-            <div className="border bg-purple-400 font-bold text-3xl text-center py-4 rounded">{hari}</div>
+          {["Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu", "Minggu"].map( (hari, index) => (
+            <div key={index} className="border bg-[#bfb4f8] font-bold text-3xl text-center py-4 rounded-full">{hari}</div>
           ))}
         </div>
 
@@ -106,7 +104,7 @@ const Jadwal = () => {
         {/* <div className="input_catetan_hari grid grid-cols-5 grid-rows-5 gap-4"> */}
         <div className="grid grid-cols-7 grid-rows-3 gap-4">
           {jadwal.map((data, index) => (
-            <div className={`border-4 border-gray-400 rounded-lg hover:cursor-pointer ${data.judul ? "bg-black text-white" : null} p-5`} key={index} onClick={() => addJadwal(data.id)}>
+            <div className={`border-4 border-gray-400 hover:cursor-pointer rounded-full ${data.judul ? "bg-black text-white" : null} p-5`} key={index} onClick={() => addJadwal(data.id)}>
               <p className="text-sm">{data.judul}</p>
               <p className="text-sm">{data.tanggal}</p>
               {/* <p className="text-sm">ID : {data.id}</p> */}
