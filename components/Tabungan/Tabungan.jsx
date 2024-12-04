@@ -94,7 +94,7 @@ const handleInputChange = (value) => {
 
         <div className='tampilanCatatanContainer'>
 
-          <div className='tampilanCatatan'>
+          <div className='tampilanCatatan overflow-y-scroll'>
             <ul className='listTabunganContainer'>
               {dataTabungan.map((data, index) => (
                 <li key={index}>
