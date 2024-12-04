@@ -1,5 +1,5 @@
 import React from 'react';
-import infoSakoHeader from "../../public/asset/header/tabungan.png";
+import infoSakoHeader from "../../public/asset/header/info_sako.png";
 const ListProduct = () => {
   const products = [
     {
