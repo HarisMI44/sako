@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <Hero />
+      {/* <Hero /> */}
 
       <div className="container">
         <Jadwal />
