@@ -5,7 +5,7 @@ import hero_jadwal_harian from '../../public/asset/header/hero_jadwal_harian.png
 import hero_catatan_keuangan from '../../public/asset/header/hero_catatan_keuangan.png'
 
 
-const Hero = () => {
+const Header = () => {
   return (
     <header className='header-hero flex'>
     <div className='flex flex-1 items-center'>
@@ -20,4 +20,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Header

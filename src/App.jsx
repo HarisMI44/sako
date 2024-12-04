@@ -2,13 +2,13 @@ import './App.css'
 import Tabungan from '../components/Tabungan/Tabungan'
 import Jadwal from '../components/Jadwal/Jadwal';
 import ListProduct from '../components/ListProduct/ListProduct';
-import Hero from '../components/Hero/hero';
+import HeroHeader from '../components/Header/Header';
 
 function App() {
 
   return (
     <>
-      {/* <Hero /> */}
+      <HeroHeader />
 
       <div className="container">
         <Jadwal />
