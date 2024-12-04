@@ -1,5 +1,5 @@
 import React from 'react';
-
+import infoSakoHeader from "../../public/asset/header/tabungan.png";
 const ListProduct = () => {
   const products = [
     {
@@ -66,7 +66,7 @@ const ListProduct = () => {
 
   return (
     <section id='infoSako' className='infoSako'>
-          <h1>Info Sako</h1>
+          <img src={infoSakoHeader} className='m-auto mb-10'/>
           <div className='containerCard'>
             {products.map((item, key) => (
               

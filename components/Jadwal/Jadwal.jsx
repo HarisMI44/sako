@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react';
+import JadwalHeader from "../../public/asset/header/jadwal_harian.png";
 
 const Jadwal = () => {
 
@@ -93,7 +94,7 @@ const Jadwal = () => {
   return (
     <>
       <section id="jadwalHarian" className='mt-48'>
-        <h1 className='text-center mb-14 text-black'>Jadwal Harian</h1>
+        <img src={JadwalHeader} className='m-auto mb-10'/>
         {/* <div className="nama_hari"> */}
         <div className="grid grid-cols-7 gap-4 mb-4 mt-4">
           {["Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu", "Minggu"].map( hari => (

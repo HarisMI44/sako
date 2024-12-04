@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import DetailTabungan from './DetailTabungan'
-
+import TabunganHeader from "../../public/asset/header/tabungan.png";
 const Tabungan = () => {
 
   const [dataTabungan, setDataTabungan] = useState([]);
@@ -70,7 +70,7 @@ const handleInputChange = (value) => {
 
   return (
     <section id='tabungan' className='tabungan'>
-      <h1>Tabungan</h1>
+      <img src={TabunganHeader} className='m-auto mb-10'/>
       <div className='containerTabungan'>
         <div className='inputTabunganContainer'>
 
