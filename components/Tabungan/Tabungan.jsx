@@ -36,7 +36,6 @@ const Tabungan = () => {
       }
     ]
 
-    console.log(newData);
     localStorage.setItem("tabungan", JSON.stringify(newData));
     setDataTabungan(newData);
 
@@ -44,10 +43,6 @@ const Tabungan = () => {
     setInputNominal("");
     setInputTanggal("");
     setInputKeterangan("");
-  }
-
-  function hitungTotal() {
-    return dataTabungan.reduce((acc, value) => acc + parseInt(value.nominal), 0);
   }
 
 
@@ -173,10 +168,6 @@ const Tabungan = () => {
               ))}
 
             </ul>
-          </div>
-          <div className='tampilanTotal'>
-            <h2>Total : </h2>
-            <h2>Rp. {hitungTotal().toLocaleString('id-ID')}</h2>
           </div>
 
         </div>
